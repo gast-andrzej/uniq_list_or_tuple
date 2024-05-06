@@ -1,0 +1,25 @@
+
+def func_gener_uniq_tuple():
+    tu_moduj_skladnie = "" #tutaj w cudzysłowiach eklep składnie else if w języku jaki trzeba
+    opcjonalne_zamkniecie_warunku = "" #tutaj w cudzysłowiach można wkleić np. zamknięcie klamrowe
+    ilosc_kombinacji = 0 #ile unikatów chcesz wygenerować -> format int
+
+    q = set()
+    while len(q) < ilosc_kombinacji:
+        q.add(tuple(__import__('random').randint(0,1) for z in range(18)))
+
+    for i in q: open('texter.txt', 'a').write(tu_moduj_skladnie + f"{i}" + opcjonalne_zamkniecie_warunku + '\n')
+func_gener_uniq_tuple()
+
+
+def func_gener_uniq_list():
+    tu_moduj_skladnie = "" #tutaj w cudzysłowiach eklep składnie else if w języku jaki trzeba
+    opcjonalne_zamkniecie_warunku = "" #tutaj w cudzysłowiach można wkleić np. zamknięcie klamrowe
+    ilosc_kombinacji = 50 #ile unikatów chcesz wygenerować -> format int
+
+    q = set()
+    while len(q) < ilosc_kombinacji:
+        q.add(tuple(__import__('random').randint(0,1) for z in range(18)))
+
+    for i in q: open('texter.txt', 'a').write(tu_moduj_skladnie + f"{list(i)}" + opcjonalne_zamkniecie_warunku + '\n')
+func_gener_uniq_list()
